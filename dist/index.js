@@ -3403,9 +3403,13 @@ async function run() {
     }
 
     core.setOutput('tag_major', tagMajor);
+    core.debug(tagMajor)
     core.setOutput('tag_rc', tagRc);
-    core.setOutput('tag_rc_slug', tagRc.replace(['.', '-'], '_'));
-    core.setOutput('tag_rc_hyphen', tagRc.replace(['.', '-'], '-'));
+    core.debug(tagRc)
+    core.setOutput('tag_rc_slug', tagRc.replaceAll('.', '-'));
+    core.debug(tagRc.replaceAll('.', '-'))
+    core.setOutput('tag_rc_underscore', tagRc.replaceAll('.', '_').replaceAll('-', '_'));
+    core.debug(tagRc.replaceAll('.', '_').replaceAll('-', '_'))
 
   } catch (error) {
     core.setFailed(error.message);
