@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/dcorrea777/format-tags-semver#readme",
   "dependencies": {
-    "@actions/core": "^1.10.0"
+    "@actions/core": "^1.10.0",
+    "semver": "^7.3.8"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.36.1",
