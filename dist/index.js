@@ -3398,7 +3398,7 @@ async function run() {
     var tagMajor  = `v${semver.major}`;
     var tagRc     = `v${semver.major}.${semver.minor}.${semver.patch}`;
     
-    if (semver.prerelease() !== null) {
+    if (semver.prerelease !== null) {
       tagRc = `v${semver.major}.${semver.minor}.${semver.patch}-rc`
     }
 
