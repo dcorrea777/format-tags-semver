@@ -6,14 +6,18 @@ inputs:
     required: true
     default: 'v0.0.0'
 outputs:
-  tag_major:
-    description: 'tag major'
-  tag_rc:
-    description: 'tag with rc'
-  tag_rc_slug:
-    description: 'tag slug'
-  tag_rc_hyphen:
-    description: 'tag hyphen'
+  raw:
+    description: 'raw'
+  major:
+    description: 'major'
+  minor:
+    description: 'minor'
+  patch:
+    description: 'patch'
+  release:
+    description: 'release'
+  version:
+    description: 'patch'
 runs:
   using: 'node16'
   main: 'dist/index.js'
