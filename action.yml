@@ -1,0 +1,13 @@
+name: 'Format tags semver'
+description: 'Generate multiple output formats of a tag in semver standard'
+inputs:
+  tag:
+    description: 'tag value'
+    required: true
+    default: 'v0.0.0'
+outputs:
+  full:
+    description: 'Original value of your tag'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
